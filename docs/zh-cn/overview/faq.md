@@ -6,7 +6,7 @@
 
 ## 我需要包含哪些脚本？
 
-### 对于 Node.js：
+### 对于 Node.js
 
 ```bash
 npm install abcjs --save-dev
@@ -16,15 +16,15 @@ npm install abcjs --save-dev
 import abcjs from "abcjs";
 ```
 
-### 对于普通 JavaScript：
+### 对于普通 JavaScript
 
 将文件 `dist/abcjs-basic-min.js` 下载到您的项目中。然后在顶部添加：
 
-```javascript
+```html
 <script src="js/abcjs-basic-min.js" type="text/javascript"></script>
 ```
 
-## 如何在我的 ABCJS 项目中使用我本地保存的音色库？
+## 如何在我的 ABCJS 项目中使用我本地的音色库？
 
 请参阅 [沙箱](../audio/synthesizer-sandbox.md) 以查看语法。
 
@@ -65,20 +65,20 @@ if (abcjs) {
 
 ## 如何让音频立即开始播放？
 
-有些网络传输和声音缓冲区的构建需要花费一些时间。这部分工作可以稍微提前完成，因此，一旦用户与页面进行了交互，并且你知道想要播放什么音乐时，就可以开始这个过程了。你会注意到 `init()` 和 `prime()` 调用会返回一个 `Promise`。当这些 `Promise` resolve 后，点击 `play()` 将会非常快。
+有些网络传输和声音缓冲区的构建需要花费一些时间。这部分工作可以稍微提前完成，因此，一旦用户与页面进行了交互，并且你知道想要播放什么音乐时，就可以开始这个过程了。`init()` 和 `prime()` 调用会返回一个 `Promise`，当这些 `Promise` resolve 后，点击 `play()` 后将会很快开始播放。
 
-## 如何避免这种错误：“The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.”
+## 如何避免错误：“The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.”
 
 不要在用户与页面互动之前调用任何与音频相关的功能。
 
-## 我想用自定义的符号/图标替换所有的音符。我该怎么做？
+## 我想用自定义的符号 / 图标替换所有的音符。我该怎么做？
 
-在调用 `renderAbc()` 之后，查找所有具有“abcjs-note”类的元素，并将其中的路径替换成你的图片。
-为了实现这一点，请使用参数 `{ add_classes: true }` 来调用 `renderAbc`。请注意，还有其他可以搜索的内容，比如音符的五线谱线条，这样你可以为不同的音符设置不同的图片。
+在调用 `renderAbc()` 之后，查找所有具有“abcjs-note”类的元素，并将其中的路径替换成你的图标。
+为了实现这一点，请使用参数 `{ add_classes: true }` 来调用 `renderAbc`。请注意，还有其他可以搜索的内容，比如音符的五线谱线条，这样你可以为不同的音符设置不同的图标。
 
 ## 如何调整音符的水平位置？例如，如果我希望音符能够水平居中？
 
-你可以使用 `%%staffwidth 400` 来选择五线谱所占用的像素数。你可以通过测试这个值来达到满意的效果。还可以使用 `%%stretchlast` 来拉伸最后一行乐谱。此外，`staffwidth` 也可以作为参数传递给 `renderAbc` 函数。更多示例请参考 wrap.html 演示文件。
+你可以使用 `%%staffwidth 400` 来设置五线谱所占的像素数。你可以通过测试这个值来达到满意的效果。还可以使用 `%%stretchlast` 来拉伸最后一行乐谱。此外，`staffwidth` 也可以作为参数传递给 `renderAbc` 函数。更多示例请参考 wrap.html 演示文件。
 
 ## 我在转调我的曲子时遇到了困难
 

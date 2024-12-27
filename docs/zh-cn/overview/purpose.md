@@ -18,8 +18,8 @@
 
 ## 无需编程的开源应用
 
-* 如果您只是想渲染您的 abc 但不是制作整个网站，有许多公开可用的应用程序可供使用
-* 若要在浏览器中处理乐谱，请参阅 [编辑器](https://editor.drawthedots.com)
+* 如果您只是想渲染您的 abc 但不是制作一整个网站，有许多公开可用的应用程序可供使用
+* 若要在浏览器中处理乐谱，请参阅 [abcjs: Quick Editor](https://editor.drawthedots.com)
 * 另请参阅 Michael Eskin 的 [ABC 工具](https://michaeleskin.com/abctools/abctools.html)，这是一个功能更全面的编辑器
 * 如果您使用 VSCode，可以安装一个扩展。按 shift-cmd-X 进入扩展面板，然后搜索“abcjs”。安装后，您可以在文件中键入时看到对乐谱的渲染。要使用它，请打开您的乐谱文件（以`.abc`结尾），然后按 shift-cmd-P 打开命令面板。搜索“abcjs”以打开预览窗格。
 
