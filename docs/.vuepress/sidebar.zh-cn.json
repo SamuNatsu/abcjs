@@ -1,0 +1,86 @@
+[
+	{
+		"isGroup": true,
+		"text": "概览",
+		"children": [
+			"/zh-cn/overview/purpose.md",
+			"/zh-cn/overview/examples.md",
+			"/zh-cn/overview/getting-started.md",
+			"/zh-cn/overview/example-generator.md",
+			"/zh-cn/overview/abc-notation.md",
+			"/zh-cn/overview/faq.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "视觉",
+		"children": [
+			"/zh-cn/visual/overview.md",
+			"/zh-cn/visual/render-abc-options.md",
+			"/zh-cn/visual/render-abc-result.md",
+			"/zh-cn/visual/classes.md",
+			"/zh-cn/visual/click-listener.md",
+			"/zh-cn/visual/dragging.md",
+			"/zh-cn/visual/tablature.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "音频",
+		"children": [
+			"/zh-cn/audio/synthesized-sound.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "动画",
+		"children": [
+			"/zh-cn/animation/timing-callbacks.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "交互",
+		"children": [
+			"/zh-cn/interactive/interactive-editor.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "移调",
+		"children": [
+			"/zh-cn/transposing/transposing.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "分析",
+		"children": [
+			"/zh-cn/analysis/tune-book.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "已弃用",
+		"children": [
+			"/zh-cn/deprecated/deprecated-api.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "开发者",
+		"children": [
+			"/zh-cn/developers/pull-requests.md",
+			"/zh-cn/developers/basic-architecture.md",
+			"/zh-cn/developers/releasing.md"
+		]
+	},
+	{
+		"isGroup": true,
+		"text": "升级",
+		"children": [
+			"/zh-cn/upgrading/release-notes.md",
+			"/zh-cn/upgrading/midijs.md"
+		]
+	}
+]
